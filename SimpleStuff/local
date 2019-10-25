@@ -1,0 +1,35 @@
+<!-- project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tuya</groupId>
+  <artifactId>tuya</artifactId>
+  <version>0.0.1</version>
+  
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-install-plugin</artifactId>
+			<version>0.0.1</version>
+			<configuration>
+				<groupId>com.run</groupId>
+				<artifactId>simpleStuff</artifactId>
+				<version>0.0.1</version>
+				<packaging>jar</packaging>
+				<file>./target/simpleStuff-0.0.1-SNAPSHOT.jar</file>
+				<generatePom>true</generatePom>
+			</configuration>
+			<executions>
+				<execution>
+					<id>install-jar-lib</id>
+					<goals>
+						<goal>install-file</goal>
+					</goals>
+					<phase>validate</phase>
+				</execution>
+			</executions>
+		</plugin>
+
+			
+	</plugins>
+</build>
+</project-->
