@@ -14,7 +14,7 @@ public class LongProsumer implements Runnable{
 		Random r = new Random();
 		int cnt = 0;
 		while(true) {
-			if(r.nextInt()%2==0)
+			if(r.nextInt()%3!=0)
 				worker.addLong(r.nextLong());
 			else
 				worker.removeLong();
