@@ -12,10 +12,12 @@ public class Worker {
 	}
 	
 	public void addLong(Long l) {
+		System.out.println("add " + l);
 		list.add(l);
 	}
 	
 	public synchronized void removeLong() {
+		System.out.println("remove ");
 		if(list.size()>0) list.remove(0);
 	}
 	
