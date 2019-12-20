@@ -1,0 +1,8 @@
+C:\sts\workspace\Util\.\.classpath
+C:\sts\workspace\Util\.\.project
+C:\sts\workspace\Util\.\.settings
+C:\sts\workspace\Util\.\bin
+C:\sts\workspace\Util\.\filelist.txt
+C:\sts\workspace\Util\.\filelistController.txt
+C:\sts\workspace\Util\.\filelistRecursive.txt
+C:\sts\workspace\Util\.\src
