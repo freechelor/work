@@ -56,8 +56,7 @@ public class ObjectToJsonConverter {
 				jsonElementsMap.put(field.getName(), (String)field.get(obj));
 			}
 		}
-	    String jsonString = jsonElementsMap.entrySet()
-	            .stream()
+	    String jsonString = jsonElementsMap.entrySet().stream()
 	            .map(entry -> "\"" + entry.getKey() + "\":\""
 	              + entry.getValue() + "\"")
 	            .collect(Collectors.joining(","));
