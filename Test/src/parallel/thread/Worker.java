@@ -22,12 +22,20 @@ public class Worker {
 	}
 	
 	public synchronized void printItAll() throws InterruptedException {
-		synchronized(list) {
-			for(Long l : list) {
-				System.out.println("element of list : " + l);
-			}
+		for(Long l : list) {
+			System.out.println("element of list ===================================================> " + l);
+			fibonaci(50);
 		}
-
-		Thread.sleep(1000);
+	}
+	
+	private int fibonaci(int r) {
+		if(r<=1) return r;
+		return fibonaci(r-1) + fibonaci(r-2);
+	}
+	
+	public static void main(String args[]) {
+		long start = System.currentTimeMillis();
+		//System.out.println(fibonaci(50));
+		System.out.println(System.currentTimeMillis()-start);
 	}
 }
